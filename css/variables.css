@@ -1,0 +1,97 @@
+/* CSS Variables */
+:root {
+  /* Color system */
+  --color-primary: #0070f3;
+  --color-primary-light: #338bf8;
+  --color-primary-dark: #0058c7;
+  
+  --color-secondary: #6d28d9;
+  --color-secondary-light: #8952e0;
+  --color-secondary-dark: #5b21b6;
+  
+  --color-accent: #f59e0b;
+  --color-accent-light: #fbb33a;
+  --color-accent-dark: #d97706;
+  
+  --color-success: #10b981;
+  --color-warning: #f97316;
+  --color-error: #ef4444;
+  
+  --color-background: #ffffff;
+  --color-surface: #f8fafc;
+  --color-card: #ffffff;
+  
+  --color-text: #1e293b;
+  --color-text-light: #64748b;
+  --color-text-lighter: #94a3b8;
+  
+  --color-border: #e2e8f0;
+  --color-border-light: #f1f5f9;
+  
+  /* Spacing system (based on 8px) */
+  --space-1: 0.4rem;  /* 4px */
+  --space-2: 0.8rem;  /* 8px */
+  --space-3: 1.6rem;  /* 16px */
+  --space-4: 2.4rem;  /* 24px */
+  --space-5: 3.2rem;  /* 32px */
+  --space-6: 4.8rem;  /* 48px */
+  --space-7: 6.4rem;  /* 64px */
+  --space-8: 9.6rem;  /* 96px */
+  
+  /* Font sizes */
+  --text-xs: 1.2rem;   /* 12px */
+  --text-sm: 1.4rem;   /* 14px */
+  --text-base: 1.6rem; /* 16px */
+  --text-lg: 1.8rem;   /* 18px */
+  --text-xl: 2.0rem;   /* 20px */
+  --text-2xl: 2.4rem;  /* 24px */
+  --text-3xl: 3.0rem;  /* 30px */
+  --text-4xl: 3.6rem;  /* 36px */
+  --text-5xl: 4.8rem;  /* 48px */
+  --text-6xl: 6.0rem;  /* 60px */
+  
+  /* Line heights */
+  --line-height-tight: 1.2;
+  --line-height-normal: 1.5;
+  --line-height-loose: 1.8;
+  
+  /* Font weights */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  
+  /* Borders */
+  --border-radius-sm: 0.4rem;
+  --border-radius: 0.8rem;
+  --border-radius-lg: 1.2rem;
+  --border-radius-full: 9999px;
+  
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  --shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  
+  /* Transitions */
+  --transition-fast: 0.15s ease;
+  --transition: 0.3s ease;
+  --transition-slow: 0.5s ease;
+  
+  /* Container max widths */
+  --container-sm: 640px;
+  --container-md: 768px;
+  --container-lg: 1024px;
+  --container-xl: 1280px;
+  
+  /* Z-index layers */
+  --z-negative: -1;
+  --z-elevate: 1;
+  --z-dropdown: 10;
+  --z-sticky: 100;
+  --z-fixed: 200;
+  --z-modal: 300;
+  --z-popover: 400;
+  --z-tooltip: 500;
+}

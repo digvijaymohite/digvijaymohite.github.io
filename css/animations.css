@@ -1,0 +1,256 @@
+/* Animations */
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Fade up animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade down animation */
+@keyframes fadeDown {
+  from {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Fade right animation */
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(-3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Fade left animation */
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(3rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Scale animation */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Animation classes */
+.animate-on-scroll {
+  opacity: 0;
+}
+
+.animate-on-scroll.animated {
+  animation-duration: 0.8s;
+  animation-fill-mode: both;
+}
+
+.animate-on-scroll[data-animation="fade-in"].animated {
+  animation-name: fadeIn;
+}
+
+.animate-on-scroll[data-animation="fade-up"].animated {
+  animation-name: fadeUp;
+}
+
+.animate-on-scroll[data-animation="fade-down"].animated {
+  animation-name: fadeDown;
+}
+
+.animate-on-scroll[data-animation="fade-right"].animated {
+  animation-name: fadeRight;
+}
+
+.animate-on-scroll[data-animation="fade-left"].animated {
+  animation-name: fadeLeft;
+}
+
+.animate-on-scroll[data-animation="scale-in"].animated {
+  animation-name: scaleIn;
+}
+
+/* Skill level animation */
+@keyframes skillLevel {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--level);
+  }
+}
+
+.skill-level-bar {
+  width: 0;
+  animation: skillLevel 1.5s ease-out forwards;
+  animation-delay: 0.3s;
+}
+
+/* Typing animation for hero text */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.typing-animation {
+  display: inline-block;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: 
+    typing 3.5s steps(40, end),
+    blink .75s step-end infinite;
+}
+
+/* Mouse scroll animation */
+.scroll-indicator {
+  position: absolute;
+  bottom: var(--space-4);
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3rem;
+  height: 5rem;
+  border: 0.2rem solid var(--color-primary);
+  border-radius: var(--border-radius-full);
+  display: flex;
+  justify-content: center;
+  padding-top: var(--space-1);
+}
+
+.scroll-indicator::before {
+  content: '';
+  width: 0.6rem;
+  height: 0.6rem;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+  animation: scrollDown 2s infinite;
+}
+
+@keyframes scrollDown {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(2.5rem);
+    opacity: 0;
+  }
+}
+
+/* Project hover effect */
+.project-card .project-img {
+  transition: transform var(--transition);
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.05);
+}
+
+/* Timeline animation */
+.timeline-item {
+  opacity: 0;
+  transform: translateX(var(--direction));
+  transition: all var(--transition-slow);
+}
+
+.timeline-item.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.timeline-item:nth-child(odd) {
+  --direction: -5rem;
+}
+
+.timeline-item:nth-child(even) {
+  --direction: 5rem;
+}
+
+/* CTA section background animation */
+.cta-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.cta-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(45deg, var(--color-primary), var(--color-secondary));
+  opacity: 0.85;
+  z-index: -1;
+}
+
+.cta-section::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    rgba(255,255,255,0.1) 0%,
+    rgba(255,255,255,0.1) 20%,
+    rgba(255,255,255,0.3) 30%,
+    rgba(255,255,255,0.1) 40%,
+    rgba(255,255,255,0.1) 100%
+  );
+  z-index: -1;
+  animation: shimmer 8s infinite linear;
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}

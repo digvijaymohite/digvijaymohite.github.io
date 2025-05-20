@@ -1,8 +1,139 @@
-<html>
-  <head>
-    <title>Digvijay Mohite</title>
-  </head>
-  <body>
-  
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digvijay Mohite - Professional Portfolio</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Availability Banner -->
+  <div class="availability-banner">
+    🚀 Currently open for new opportunities! <a href="#contact">Let's connect</a>
+  </div>
+
+  <div class="smooth-scroll-container">
+    <main class="main-content">
+      <!-- Hero Section -->
+      <section id="hero" class="section hero-section">
+        <div class="container">
+          <div class="hero-content">
+            <img src="/public/digvijay.jpeg" alt="Digvijay Mohite" class="hero-image animate-on-scroll" data-animation="fade-down">
+            <h1 class="hero-title animate-on-scroll" data-animation="fade-up">Digvijay Mohite</h1>
+            <h2 class="hero-tagline animate-on-scroll" data-animation="fade-up" data-delay="200">
+              Tech Generalist with a Specialist's Mindset | Solution Architect & Full-Stack Developer for Scalable AI, ML, Cloud & SaaS Platforms
+            </h2>
+            <div class="hero-actions animate-on-scroll" data-animation="fade-up" data-delay="400">
+              <a href="#contact" class="btn btn-primary">Contact</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Combined Experience Section -->
+      <section id="experience" class="section">
+        <div class="container">
+          <h2 class="section-title animate-on-scroll" data-animation="fade-up">Experience</h2>
+          <div class="experience-projects-section">
+            <div class="experience-column">
+              <div class="timeline" id="experience-timeline">
+                <!-- Experience items will be populated from JavaScript -->
+              </div>
+            </div>
+            <div class="projects-column">
+              <div class="projects-grid" id="projects-grid">
+                <!-- Projects will be populated from JavaScript -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Certifications Section -->
+      <section id="certifications" class="section certifications-section">
+        <div class="container">
+          <h2 class="section-title animate-on-scroll" data-animation="fade-up">Certifications</h2>
+          <div class="certifications-grid" id="certifications-grid">
+            <!-- Certifications will be populated from JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section contact-section">
+        <div class="container">
+          <h2 class="section-title animate-on-scroll" data-animation="fade-up">Get In Touch</h2>
+          <div class="contact-info animate-on-scroll" data-animation="fade-up" data-delay="200">
+            <div class="contact-item">
+              <i class="fas fa-envelope"></i>
+              <p><a href="mailto:digvijaymohite27@gmail.com">digvijaymohite27@gmail.com</a></p>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-phone"></i>
+              <div class="contact-details">
+                <p><a href="tel:+919960966003">+91 9960 966 003</a></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <i class="fas fa-mobile-alt"></i>
+              <div class="contact-details">
+                <p><a href="tel:+13413563053">+1 341 356 3053</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Pre-footer Strip -->
+    <div class="pre-footer-strip">
+      <div class="container">
+        <h3>🚀 Open for New Opportunities!</h3>
+        <p>Looking for full-time positions and short-term projects. Let's create something amazing together!</p>
+        <p class="contact-prompt">Send me an email at <a href="mailto:digvijaymohite27@gmail.com">digvijaymohite27@gmail.com</a></p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p>&copy; <span id="current-year"></span> Digvijay Mohite. All Rights Reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Navigation Menu -->
+    <nav class="nav-menu">
+      <div class="nav-toggle" id="nav-toggle">
+        <span class="nav-icon"></span>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#hero" class="nav-link active">Home</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/utils.js"></script>
+  <script src="js/smoothScroll.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/navigation.js"></script>
+  <script src="js/projects.js"></script>
+  <script src="js/experience.js"></script>
+  <script src="js/certifications.js"></script>
+  <script src="js/main.js"></script>
+</body>
 </html>
