@@ -320,17 +320,19 @@
 }
 
 .contact-item i {
-  width: 48px;
-  height: 48px;
+  width: 30px;
+  height: 30px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: var(--color-primary);
   color: white;
   border-radius: 50%;
-  font-size: var(--text-xl);
+  font-size: 14px;
   flex-shrink: 0;
 }
+
+
 
 .contact-item p {
   margin: 0;
