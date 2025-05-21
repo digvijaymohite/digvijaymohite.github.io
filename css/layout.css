@@ -171,9 +171,9 @@
   height: 100%;
   width: 0.2rem;
   background: linear-gradient(
-          to bottom,
-          var(--color-primary-light) 0%,
-          var(--color-primary) 100%
+    to bottom,
+    var(--color-primary-light) 0%,
+    var(--color-primary) 100%
   );
 }
 
@@ -268,7 +268,7 @@
   .projects-grid {
     grid-template-columns: repeat(2, 1fr);
   }
-
+  
   .key-highlights {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -309,7 +309,7 @@
     align-items: center;
     gap: var(--space-4);
   }
-
+  
   .key-highlights {
     grid-template-columns: 1fr;
   }
@@ -333,7 +333,7 @@
   .btn {
     width: 100%;
   }
-
+  
   .about-text {
     font-size: var(--text-base);
   }
