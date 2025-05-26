@@ -8,65 +8,72 @@ const projectsData = [
   {
     id: 1,
     title: "Multi-Tenant Enterprise SaaS Platform",
-    description: "Led the development of a robust multi-tenant SaaS platform serving global enterprise clients in the career transition space. Designed tenant-aware microservices, secure data isolation, and scalable deployment pipelines.",
+    description: "Architected and led the development of a multi-tenant SaaS platform serving Fortune 500 clients in the career transition space. Designed tenant-aware services, region-based deployments, IAM-secured APIs, and cost-optimized multi-cloud infrastructure. Enabled onboarding of multiple business lines through a configurable microservice model.",
     technologies: ["Java", "Spring Boot", "AWS", "GCP BigQuery", "MySQL Aurora", "Kubernetes", "Terraform", "React", "Node.js"],
     category: "architecture"
   },
   {
     id: 2,
-    title: "AI Resume Builder",
-    description: "Designed and developed an AI-powered resume builder that analyzes a user's experience and generates tailored, job-ready resumes using LLMs. Integrated real-time editing, ATS keyword suggestions, and version tracking.",
-    technologies: ["OpenAI API", "Node.js", "React", "AWS Lambda", "MongoDB", "LangChain", "Tailwind CSS"],
+    title: "AI Resume Builder Platform",
+    description: "Designed and developed an AI-powered resume builder that analyzes user experience, recommends ATS-optimized content using OpenAI, and integrates with job boards. Features included semantic skill mapping, real-time collaboration, and intelligent versioning.",
+    technologies: ["OpenAI API", "LangChain", "Node.js", "React", "AWS Lambda", "MongoDB", "Tailwind CSS"],
     category: "ai"
   },
   {
     id: 3,
-    title: "Nudging Platform",
-    description: "Built a platform to send personalized nudges to users, increasing engagement and driving revenue for the Career Coaching business. Implemented dynamic workflows and notification logic.",
-    technologies: ["Java", "Spring Boot", "AWS Lambda", "MySQL Aurora", "SQS/SNS", "React", "GCP BigQuery"],
+    title: "Nudging & Engagement Platform",
+    description: "Led architecture and implementation of a platform to deliver personalized behavioral nudges to users, increasing engagement and monetization in the career coaching line of business. Implemented campaign orchestration, analytics, and configurable triggers.",
+    technologies: ["Java", "Spring Boot", "AWS Lambda", "SQS/SNS", "MySQL Aurora", "React", "GCP BigQuery"],
     category: "backend"
   },
   {
     id: 4,
-    title: "Reporting Service",
-    description: "Developed a serverless reporting tool that queries BigQuery datasets and exports formatted reports to Google Sheets and Excel. Optimized for cost-efficiency and scalability.",
-    technologies: ["Python", "AWS Batch", "BigQuery", "Google Sheets API", "GCP IAM"],
+    title: "DataHub Reporting Service",
+    description: "Built a cost-efficient, serverless reporting engine that queries BigQuery and exports insights to Google Sheets and Excel. Used by business teams across regions for live dashboards and weekly insights with granular role-based access control.",
+    technologies: ["Python", "AWS Batch", "BigQuery", "Google Sheets API", "S3", "GCP IAM", "SNS"],
     category: "data"
   },
   {
     id: 5,
-    title: "Career Coaching Scheduler",
-    description: "Engineered a robust scheduling microservice integrated with Google Calendar, managing time zones, availability, and automated reminders for coaches and participants.",
-    technologies: ["Java", "Spring Boot", "Google Calendar API", "AWS Lambda", "DynamoDB"],
-    category: "backend"
+    title: "Intelligent Scheduling & Availability Service",
+    description: "Architected a region-aware scheduling and availability platform for career coaching workflows used by global enterprise clients. Designed as a centralized microservice, it integrates with Google Calendar and internal systems to fetch and manage real-time availability across coaches, participants, and services. Key features included dynamic time zone handling, conflict resolution, availability caching, automated reminders, and seamless integration with booking UIs. The service powers 10+ scheduling touchpoints across multiple business lines and reduced no-shows by 35%.",
+    technologies: ["Java", "Spring Boot", "Google Calendar API", "AWS Lambda", "Redis", "DynamoDB", "MySQL Aurora", "SQS", "CloudWatch"],
+    category: "architecture"
   },
   {
     id: 6,
-    title: "Marketing Inbox Assistant",
-    description: "Designed and built a Gmail-integrated SaaS that ingests emails, stores them in S3, and classifies them using LLMs to drive automation and analytics.",
-    technologies: ["Python", "AWS Chalice", "Gmail API", "React", "DynamoDB", "LLM"],
-    category: "ai"
+    title: "CrossEngage Real-Time Integration",
+    description: "Architected real-time event ingestion pipeline to CrossEngage.io for user and event data. Designed a region-aware system using SQS, Lambda, and config-driven rules to manage participant sync and ensure GDPR compliance across distributed tenants. Implemented configurable ingestion logic with API resiliency and logging.",
+    technologies: ["AWS Lambda", "S3", "SQS", "MySQL Aurora", "BigQuery", "Python", "GCP Functions"],
+    category: "architecture"
   },
   {
     id: 7,
+    title: "Marketing Inbox Assistant",
+    description: "Developed a Gmail-integrated SaaS to process and classify incoming emails using LLMs. Emails are stored in S3, metadata indexed for analytics, and actions automated via category-specific workflows. Designed for extensibility to support future email-based automation.",
+    technologies: ["Python", "AWS Chalice", "Gmail API", "React", "S3", "DynamoDB", "LLM"],
+    category: "ai"
+  },
+  {
+    id: 8,
     title: "Flowsense – Marketing Automation",
-    description: "Worked as a freelance full-stack developer to implement workflows, segmentation logic, and marketing triggers. Focused on backend scalability and UI enhancements.",
+    description: "Freelanced on a marketing platform focused on campaign automation. Developed customer segmentation logic, triggers, and enhanced UI performance. Assisted with event ingestion and backend observability for large datasets.",
     technologies: ["Node.js", "PostgreSQL", "React", "AWS Lambda", "Tailwind CSS"],
     category: "fullstack"
   },
   {
-    id: 8,
-    title: "QuickDialog – Chat Automation",
-    description: "Built a backend system integrating OpenAI APIs for intelligent classification, response generation, and chat analytics. Focused on API security and scalability.",
+    id: 9,
+    title: "QuickDialog – Conversational Automation",
+    description: "Built AI-powered backend for automated customer communication workflows. Used OpenAI for response generation, intent detection, and classification. Ensured security with signed API requests and multi-region resilience.",
     technologies: ["Python", "OpenAI API", "AWS Lambda", "PostgreSQL", "React"],
     category: "ai"
   },
   {
-    id: 9,
-    title: "Availability Service",
-    description: "Designed a centralized service to fetch and manage real-time availability data across multiple time zones and platforms, powering key scheduling workflows.",
-    technologies: ["Java", "Spring Boot", "MySQL", "Redis", "AWS ECS"],
-    category: "backend"
+    id: 10,
+    title: "CI/CD Automation & Deployment Modernization",
+    description: "Migrated legacy CI/CD to GitHub Actions and AWS CodePipeline for a multi-service architecture. Integrated static code analysis, automated testing, and Slack-based release notifications for 20+ microservices, reducing deployment time by 60%.",
+    technologies: ["GitHub Actions", "AWS CodePipeline", "SonarQube", "Docker", "EKS", "Helm"],
+    category: "devops"
   }
 ];
 
