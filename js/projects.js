@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 /**
- * Renders the projects section
+ * Renders the projects grid
  */
 function renderProjects() {
   const projectsGrid = document.getElementById('projects-grid');
@@ -46,10 +46,30 @@ function renderProjects() {
       content: project.description
     });
 
+    const projectLinks = createElement('div', {
+      classes: ['project-links']
+    });
+
     const readMore = createElement('span', {
       classes: ['read-more'],
       content: 'Read More'
     });
+
+    projectLinks.appendChild(readMore);
+
+    // Add URL if present
+    if (project.url) {
+      const projectUrl = createElement('a', {
+        classes: ['project-url'],
+        content: '<i class="fas fa-external-link-alt"></i> View Project',
+        attributes: {
+          href: project.url,
+          target: '_blank',
+          rel: 'noopener noreferrer'
+        }
+      });
+      projectLinks.appendChild(projectUrl);
+    }
 
     const projectTech = createElement('div', {
       classes: ['project-tech']
@@ -67,7 +87,7 @@ function renderProjects() {
 
     projectContent.appendChild(projectTitle);
     projectContent.appendChild(projectDesc);
-    projectContent.appendChild(readMore);
+    projectContent.appendChild(projectLinks);
     projectContent.appendChild(projectTech);
 
     projectCard.appendChild(projectContent);
@@ -89,7 +109,7 @@ function renderProjects() {
 function setupReadMore() {
   document.addEventListener('click', (e) => {
     if (e.target.classList.contains('read-more')) {
-      const desc = e.target.previousElementSibling;
+      const desc = e.target.closest('.project-content').querySelector('.project-desc');
       desc.classList.toggle('expanded');
       e.target.textContent = desc.classList.contains('expanded') ? 'Read Less' : 'Read More';
     }

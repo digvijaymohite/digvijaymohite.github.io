@@ -66,7 +66,8 @@ const projectsData = [
     title: "QuickDialog – Conversational Automation",
     description: "Built AI-powered backend for automated customer communication workflows. Used OpenAI for response generation, intent detection, and classification. Ensured security with signed API requests and multi-region resilience.",
     technologies: ["Python", "OpenAI API", "AWS Lambda", "PostgreSQL", "React"],
-    category: "ai"
+    category: "ai",
+    url: "https://www.quickdialog.com"
   },
   {
     id: 10,
