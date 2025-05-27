@@ -330,7 +330,7 @@
 /* Contact Item */
 .contact-item {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   gap: var(--space-3);
 }
 
@@ -350,6 +350,9 @@
 .contact-item p {
   margin: 0;
   font-size: var(--text-lg);
+  display: flex;
+  align-items: center;
+  height: 48px;
 }
 
 .contact-details {
