@@ -82,9 +82,9 @@ const projectsData = [
 const experienceData = [
   {
     id: 1,
-    role: "Senior Software Engineer",
+    role: "Principal Software Engineer",
     company: "Randstad Enterprise",
-    period: "Apr 2022 - Dec 2025",
+    period: "Apr 2022 - Jan 2026",
     description: "Leading development of enterprise solutions using Google Cloud Platform (GCP) and React.js. Architecting scalable cloud solutions and implementing best practices."
   },
   {
